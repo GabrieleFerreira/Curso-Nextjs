@@ -1,6 +1,7 @@
 import Tarefa from "@/src/models/Tarefas"
 import { useState } from "react"
-
+import { faPlus } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 interface FormularioProps {
     novaTarefaCriada: (tarefa: Tarefa) => voi
@@ -31,7 +32,7 @@ export default function Formulario(props: FormularioProps) {
                 ml-3 focus: outline-none px-5 py-4 rounded-lg
                  bg-purple-600 text-white text-xl
             '>
-                +
+                <FontAwesomeIcon icon={faPlus}/>
             </button>
                 
             

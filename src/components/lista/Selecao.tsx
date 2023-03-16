@@ -1,3 +1,6 @@
+import { faCheck} from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
 interface SelecooProps{
     valor: boolean
 }
@@ -9,10 +12,11 @@ export default  function Selecao(props: SelecooProps) {
         flex justify-center items-center
         h-7  w-7 cursor-pointer rounded-full
         border border-gray-400 text-white ${gradiente}
-        `}
-       
-
-       
-        >x</div>
+        `}>
+            {props.valor 
+                ? <FontAwesomeIcon size='sm' icon={faCheck}/>
+              : ''
+            }
+        </div>
     )
 }
