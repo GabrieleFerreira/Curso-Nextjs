@@ -4,7 +4,7 @@ import { faPlus } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 interface FormularioProps {
-    novaTarefaCriada: (tarefa: Tarefa) => voi
+    novaTarefaCriada: (tarefa: Tarefa) => void
 
 }
 export default function Formulario(props: FormularioProps) {
