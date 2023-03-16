@@ -7,7 +7,7 @@ import ListaRodape from "./ListaRodape"
 interface ListaProps {
     tarefas: ListaTarefas 
     mudou: (tarefas: ListaTarefas) => void
-    
+    children?: any
 }
 
 export default function Lista(props: ListaProps) {

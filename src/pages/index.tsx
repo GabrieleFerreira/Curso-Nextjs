@@ -26,7 +26,7 @@ export default function Home() {
           <Formulario novaTarefaCriada={novaTarefaCriada}></Formulario>
       </Cabecalho>
       <Conteudo>
-          <Lista tarefas={tarefas} mudou = {(novasTarefas) => {
+          <Lista tarefas={tarefas} mudou={(novasTarefas) => {
           setTarefas(novasTarefas)}}>
           </Lista>
       </Conteudo>

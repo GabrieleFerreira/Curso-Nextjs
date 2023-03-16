@@ -1,7 +1,7 @@
 interface ListaBotaoProps {
     selecionado: boolean
     classname?: string
-    children: any
+    children?: any
     onClick: (evento: any) => void
 }
 export default function ListaBotao(props: ListaBotaoProps) {

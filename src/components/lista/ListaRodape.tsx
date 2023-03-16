@@ -6,7 +6,7 @@ import ListaBotao from "./ListaBotao"
 interface ListaRodapeProps {
     tarefas: ListaTarefas
     mudou: (tarefas: ListaTarefas) => void
-
+    children?: any
 }
 export default function ListaRodape(props: ListaRodapeProps) {
     const {tarefas, mudou} =props
@@ -65,7 +65,7 @@ export default function ListaRodape(props: ListaRodapeProps) {
             <span className='flex-grow'>
 
             </span>
-                <ListaBotao onClick={() => mudou(tarefas.excluirConcluidas())} >
+                <ListaBotao onClick={() => mudou(tarefas.excluirConcluidas())} selecionado={false} >
                     Excluir <span className='hidden md:inline'>Concluídas</span>
                 </ListaBotao>
            </>
